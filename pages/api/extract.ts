@@ -9,13 +9,13 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   try {
-    const { url } = req.body
+    const { url } = req.query
 
     if (!url) {
       res.status(400).json({ message: "url is required!" })
     }
 
-    if (req.method === "POST" && url) {
+    if (req.method === "GET" && url) {
       const options = {
         headers: {
           // Generate fake ua

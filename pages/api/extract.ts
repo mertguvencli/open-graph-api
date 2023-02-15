@@ -60,9 +60,9 @@ export default async function handler(
     res.status(405).json({ message: "Method not allowed!" })
   } catch (ex: any) {
     if (typeof Error) {
-      res.status(500).json({ message: ex.message })
+      res.status(400).json({ message: ex.message })
     } else {
-      res.status(500).json({ message: "Unexpected error!" })
+      res.status(400).json({ message: "Unexpected error!" })
     }
   }
 }

@@ -6,7 +6,8 @@ export default function Home() {
   // const [disabled, setDisabled] = useState(true)
   // const [adding, setAdding] = useState(false)
   // const [error, setError] = useState(null)
-  const apiUrl = "https://mertguvencli.github.io/open-graph-api/api/extract?url="
+  const domain = "https://open-graph-api-eight.vercel.app"
+  const apiUrl = `${domain}/api/extract?url=`
 
   return (
     <>

@@ -11,7 +11,7 @@ export default async function handler(
   try {
     const { url } = req.query
 
-    if (!url) {
+    if (!url || !req.query) {
       res.status(400).json({ message: "url is required!" })
     }
 
@@ -59,7 +59,7 @@ export default async function handler(
     }
   } catch (ex: any) {
     if (typeof Error) {
-      res.status(500).json({ ...ex.message })
+      res.status(500).json({ message: ex.message })
     } else {
       res.status(500).json({ message: "Unexpected error!" })
     }

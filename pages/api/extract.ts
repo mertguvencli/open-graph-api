@@ -32,11 +32,11 @@ export default async function handler(
               }
             })
 
-            return og
+            return { ...og, success: true }
           }
         })
         .catch((error) => {
-          console.log(error)
+          return { message: error, success: false }
         });
 
       return results
@@ -50,6 +50,6 @@ export default async function handler(
       res.status(400).json({ message: "URL does not support open graph properties!" })
     }
   }
-  
+
   res.status(405).json({ message: "Method not allowed!" })
 }

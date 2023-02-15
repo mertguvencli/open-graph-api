@@ -1,2 +1,1 @@
-# open-graph-api
-Open Graph Extraction API
+# Open Graph Extraction API

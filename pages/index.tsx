@@ -23,7 +23,7 @@ export default function Home() {
 
           <div className='mt-20'>
             <pre className='bg-gray-100 font-mono text-xs p-2 rounded-lg shadow flex items-center justify-between gap-2 sm:gap-5'>
-              <span className='text-lg sm:text-2xl font-black'>GET</span>
+              <span className='text-lg sm:text-2xl font-black'>POST</span>
               <span>{apiUrl}<span className='font-bold sm:text-lg'>{"your_url"}</span></span>
             </pre>
           </div>

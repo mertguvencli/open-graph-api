@@ -6,7 +6,7 @@ export default function Home() {
   // const [disabled, setDisabled] = useState(true)
   // const [adding, setAdding] = useState(false)
   // const [error, setError] = useState(null)
-  const domain = "https://open-graph-api-eight.vercel.app"
+  const domain = "https://ogea.link"
   const apiUrl = `${domain}/api/extract?url=`
 
   return (
